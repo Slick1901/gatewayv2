@@ -1,0 +1,226 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /** nav **/
+  
+  nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(30, 30, 30, .2), rgba(30, 30, 30, .7)), url(Images/bg3.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  nav img{
+    width: 125px;
+  }
+  
+  .nav-links{
+    flex: 1;
+    text-align: right;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+  }
+  /** box **/
+  .box{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .box h1{
+    font-size: 62px;
+  }
+  .box p{
+    background-blend-mode: ;
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: whitesmoke;
+  }
+  
+  /** Footer **/
+  
+  footer {
+  text-align: center;
+  background-color: #f7951d;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  }
+  footer img{
+  border: 10px;
+  border-radius:35px;
+  height: 30px;
+  width: 30px;
+  }
+  
+  /** Menu **/
+  .menuHeader {
+    height: 30%;
+    width: 100%;
+    background-image: linear-gradient(rgba(30, 30, 30, .2), rgba(30, 30, 30, .7)), url(Images/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #684e4f;
+  }
+  .menuHeader h1{
+    margin-top: 0px;
+  }
+  .menu {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: space-evenly;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .menu img {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .menu .option {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    background: whitesmoke;
+  }
+  
+  
+  .menu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 4px 8px;
+    position: relative;
+    max-width: 400px;
+    min-width: 400px;
+  
+  }
+  .menuBody {
+    background: lightgray;
+  }
+  
+  /** Contact page **/
+  .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .contactHeader {
+    height: 30%;
+    width: 100%;
+    background-image: linear-gradient(rgba(30, 30, 30, .2), rgba(30, 30, 30, .7)), url(Images/background2.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: whitesmoke;
+  }
+  .contactHeader h1 {
+    margin-top: 0px;
+  }
+  .contactBody{
+    background: #d3d3d3;
+  }
+  .contact-us {
+    width: 80%;
+    margin: auto;  
+  }
+  
+  .info {
+    flex-basis: 40%;
+    margin-bottom: 30px;
+  }
+  
+  .info img{
+    height:300px;
+    margin: 10px;
+    padding: 20px 10px;
+    width:275px;
+  }
+  
+  .info div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .info div p{
+    padding: 0;
+  }
+  
+  .info div h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: #18355d;
+    font-weight: 400;
+  }
+  
+  .info input, .info textarea{
+    width: 85%;
+    padding: 15px;
+    margin-bottom: 17px;
+    margin-right: 17px;
+    outline: none;
+    border: 1px solid #18355d;
+    box-sizing: border-box;
+  }
+  
+  /** Hero Button**/
+  .herobtn{
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  .herobtn:hover{
+    border: 2px solid #18355d;
+    background: #18355d;
+    transition: .5s;
+  }
+  
